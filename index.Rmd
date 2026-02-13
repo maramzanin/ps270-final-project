@@ -11,4 +11,4 @@ output:
 
 ## Project thoughts
 
-I am interested in exploring data related to how R can be used for social expiriments.
+I am interested in exploring data related to how R can be used for social expiriments. Specifically, I would like to expand on what we learned about the stats of effective techniques to convince voters how to vote on issues.
