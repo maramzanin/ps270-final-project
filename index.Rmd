@@ -11,4 +11,14 @@ output:
 
 ## Project thoughts
 
-I am interested in exploring data related to how R can be used for social expiriments. Specifically, I would like to expand on what we learned about the stats of effective techniques to convince voters how to vote on issues.
+Has religion become less stigmatized in the last two decades? In this study, I plan to examine the extent to which religious people have endured government restrictions and social hostilities between 2007-2022. I hypothesize that both of these factors have increased within the set time frame, thus reflecting increased stigmatization. Because of the perceived rise of conservatism in the recent years, highlighting a surge in ideological, polarized conservatism from 2008 onward, I expect that number of government restrictions on religion and social hostilities against religious people will increase over the 16 years. My sample is comprised of data from every country, organized first by which country and then by year. After defining information, columns represent subcategories in both government restrictions and social hostilities. My unit of analysis will be 30 randomly selected countries to examine, throughout all 16 years. The Government Restrictions Index (GRI) will be based on 20 indicators of ways that national and local governments restrict religions, ranging from 0.0 to 10.0--from lowest to highest level of government restrictions. Examples of these subcategories are whether the law provides for "freedom of religion" or whether government interferes with religious practices. Similarly, the Social Social Hostilities Index (SHI) will be based on 13 indicators of ways that private individuals and social groups infringe upon religious beliefs, ranging from 0.0 to 10.0--from lowest to highest level of social hostilities. Examples of these subcategories are whether there were instances of hostility over conversions of religion or whether women were harassed for violating religous dress codes. I will calculate these indexes based on the comprising parts of each one, to find a total score for each of the selected countries. If I observe that the average of these indexes increase across the units over the span from 2008-2022, I will thus be able to conclude that religion has become more stigmatized in the last two decades. If, on the other hand, the average of these indexes decrease over the allotted time, I will conclude that religion has become less stigmatized in the last two decades. Finally, if results vary significantly, remain relatively the same, or show no real pattern, I will conclude that religion has not had a specific trend of becoming more or less stigmatized.
+
+
+
+
+```{r}
+library(tidyverse)
+readr::read_csv("~/Downloads/Global-Restrictions-on-Religion-2007-2022-Dataset/PublicDataset_ReligiousRestrictions_2007to2022.csv")
+head(PublicDataset_ReligiousRestrictions_2007to2022)
+```
+
