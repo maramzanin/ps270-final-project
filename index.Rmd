@@ -29,7 +29,7 @@ religion_means <- religion_data |>
 
 religion_SHI_GRI <- religion_means |>
   ggplot(aes(x = Question_Year, y = country_avg)) +
-  labs(title = "Religion Stigmatization Over Time", caption = "Religious Stigma Average caluclated from the average of government restrictions and social hostilities, averaging all countries for each year", x = "Year", y = "Religious Stigma Average") +
+  labs(title = "Religion Stigmatization Over Time", caption = "Religious Stigma Average caluclated from the average of government restrictions and social hostilities together, averaging all countries for each year", x = "Year", y = "Religious Stigma Average") +
   geom_point() +
   geom_smooth()
 
