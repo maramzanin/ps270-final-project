@@ -22,14 +22,16 @@ head(religion_data)
 ```{r}
 
 religion_means <- religion_data |>
-#  filter(Question_Year %in% c(2007, 2012, 2017, 2022)) |>
   group_by(Ctry_EditorialName, Question_Year) |>
-  summarize(religion_avg = mean((SHI + GRI)/2, na.rm = TRUE))
+  summarize(religion_avg = mean((SHI + GRI)/2, na.rm = TRUE)) |>
+  group_by(Question_Year) |>
+  summarize(country_avg = mean(religion_avg, na.rm = TRUE))
 
 religion_SHI_GRI <- religion_means |>
-  ggplot(aes(x = Question_Year, y = religion_avg)) +
-  geom_col() +
-  labs(title = "Religion Stigmatization Over Time", caption = "Religious Stigma Average caluclated from the average of government restrictions and social hostilities", x = "Year", y = "Religious Stigma Average")
+  ggplot(aes(x = Question_Year, y = country_avg)) +
+  labs(title = "Religion Stigmatization Over Time", caption = "Religious Stigma Average caluclated from the average of government restrictions and social hostilities, averaging all countries for each year", x = "Year", y = "Religious Stigma Average") +
+  geom_point() +
+  geom_smooth()
 
 religion_SHI_GRI
 
