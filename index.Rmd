@@ -36,7 +36,7 @@ religion_SHI_GRI <- religion_means |>
 religion_SHI_GRI
 
 ```
-Religious Stigma Average calculated from the average of government restrictions and social hostilities together, averaging all countries for each year
+Religious Stigma Average calculated from the average of government restrictions and social hostilities together, averaging all countries for each year.
 
 ```{r, echo=FALSE}
 religion_SHI_GRI <- religion_data |>
