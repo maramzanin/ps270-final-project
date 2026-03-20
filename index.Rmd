@@ -33,7 +33,6 @@ religion_SHI_GRI <- religion_means |>
   geom_point() +
   geom_smooth()
 
-religion_SHI_GRI
 
 ```
 Religious Stigma Average calculated from the average of government restrictions and social hostilities together, averaging all countries for each year.
