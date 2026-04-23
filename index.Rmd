@@ -53,5 +53,3 @@ The regression shows a Question_Year value of about 0.03, which means for every 
 With only short decreases, there is long-term exponential growth in religious stigma, showing that religious stigma has not decreased over time, rather it has grown.
 
 
-
-
