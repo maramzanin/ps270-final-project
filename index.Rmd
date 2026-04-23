@@ -17,6 +17,7 @@ Has religion become less stigmatized in the last two decades? In this study, I p
 library(tidyverse)
 religion_data <- readr::read_csv("~/Downloads/Global-Restrictions-on-Religion-2007-2022-Dataset/PublicDataset_ReligiousRestrictions_2007to2022.csv")
 head(religion_data)
+#religion_data
 ```
 ## Table
 ```{r}
@@ -35,6 +36,10 @@ religion_SHI_GRI <- religion_means |>
 
 religion_SHI_GRI
 
+fit <- lm(country_avg ~ Question_Year, data = religion_means)
+fit
+
+
 ```
 Religious Stigma Average (RSA) calculated from the average of government restrictions and social hostilities together, averaging all countries for each year.
 
@@ -42,6 +47,11 @@ Religious Stigma Average (RSA) calculated from the average of government restric
 
 Has religion become less stigmatized in the last two decades? Based on this data, as displayed in the graph, the answer is no. The visualization shows a low Religious Stigma Average (RSA) score across countries, starting at around 2.20 in 2007 and growing exponentially until 2012, reaching a high of just over 3.0. After that, the score dips dramatically to about 2.4 in 2014, and then follows with a small increase, decrease, and then plateau over the following 6 years, staying between 2.75 and 3.0.
 
-There are a few reasons for the significant changes in religious stigma over this allotted time period. The initial, large but gradual increase in RSA is commonly associated with rising anti-Muslim sentiments, sectarian violence in Nigeria, and increased harassment regarding religious dress for women. The steep increase in 2012 is generally associated with the Arab Spring, occurring just before in 2010-2011. The relatively stabilized scores from 2016 on remain high, and typically connected with the decline of religious affiliation as a whole. Responding to the original question, beyond the smaller trends within, the graph shows an increase in RSA over time, as displayed by the mean line. With only short decreases, there is long-term exponential growth in religious stigma, showing that religious stigma has not decreased over time, rather it has grown.
+There are a few reasons for the significant changes in religious stigma over this allotted time period. The initial, large but gradual increase in RSA is commonly associated with rising anti-Muslim sentiments, sectarian violence in Nigeria, and increased harassment regarding religious dress for women. The steep increase in 2012 is generally associated with the Arab Spring, occurring just before in 2010-2011. The relatively stabilized scores from 2016 on remain high, and typically connected with the decline of religious affiliation as a whole. Responding to the original question, beyond the smaller trends within, the graph shows an increase in RSA over time, as displayed by the mean line.
+The regression shows a Question_Year value of about 0.03, which means for every one-year increase, the average Religious Stigma Average increases by 0.03. This is neither a huge or a catastrophic increase, but it is not negligible. This means within about 33 years, religious stigma average increases 10%.
+
+With only short decreases, there is long-term exponential growth in religious stigma, showing that religious stigma has not decreased over time, rather it has grown.
+
+new new new
 
 
