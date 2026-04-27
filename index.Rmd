@@ -80,13 +80,12 @@ fit |>
     col.names = c("Term", "Estimate", "Std. Error", "t-statistic", "p-value"))
 ```
 
+The second visualization shows a low Religious Stigma Average (RSA) score across countries, starting at around 2.20 in 2007 and growing exponentially until 2012, reaching a high of just over 3.0. After that, the score dips dramatically to about 2.4 in 2014, and then follows with a small increase, decrease, and then plateau over the following 6 years, staying between 2.75 and 3.0.
+
 The regression shows a Question_Year value of about 0.03, which means for every one-year increase, the average Religious Stigma Average increases by 0.03. This is not a relatively huge increase, but it is not negligible. This means within about 33 years, religious stigma average increases 10%. This is significant because it suggests that with each year comes a RSA increase of 0.03, supporting the hypothesis that religious stigma has grown over time
 Further, the p-value is 0.005, which is much smaller than the predetermined alpha of 0.05. This indicated there is less than a 5% probability that the observed data occurred by chance. This too support the hypothesis that religious stigma has grown over time. 
 Although this result is statistically significant, we should not jump to interpret it causally. This is because the passage of time is hard to isolate on its own, and there are many things that could cause increasing religious stigma; it cannot be said definitively that the simple passing of time causes it. So, while the two are definitely correlated, we would need to conduct more research to somehow isolate time
 
-
-
-The second visualization shows a low Religious Stigma Average (RSA) score across countries, starting at around 2.20 in 2007 and growing exponentially until 2012, reaching a high of just over 3.0. After that, the score dips dramatically to about 2.4 in 2014, and then follows with a small increase, decrease, and then plateau over the following 6 years, staying between 2.75 and 3.0.
 
 
 ## Conclusion
