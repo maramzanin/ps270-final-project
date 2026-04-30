@@ -17,13 +17,13 @@ I hypothesize that both of these factors have increased within the set time fram
 
 
 ## Data
-My data is comprised from 198 countries and territories, which contain more than 99.5% of the world's population, from 2007-2022. My unit of analysis will be all of these territories, over the 16-year span. The null hypothesis is that the passing of time has had no effect on religious stigma levels.
+My data is comprised from 198 countries and territories, which contains more than 99.5% of the world's population from 2007-2022. My unit of analysis will be all of these territories, over the 16-year span. The null hypothesis is that the passing of time has had no effect on religious stigma levels.
 
-Columns represent various subcategories of two classifications: government restrictions or social hostilities.
+Columns in the original dataset represent various subcategories of two classifications: government restrictions or social hostilities.
 The Government Restrictions Index (GRI) is based on 20 indicators of methods that national and local governments used to restrict religions, ranging from 0.0 to 10.0--lowest to highest level of government restrictions. Examples of these subcategories are whether the law provides for "freedom of religion" or whether government interferes with religious practices. Similarly, the Social Hostilities Index (SHI) is based on 13 indicators of ways that private individuals and social groups infringe upon religious beliefs, ranging from 0.0 to 10.0--lowest to highest level of social hostilities. Examples of these subcategories are instances of hostility over religious conversions or whether women were harassed for violating religious dress codes (Pew, 2025).
 These indexes are calculated based on the comprising parts of each one, to find a total score for each of the selected countries, per year.
 
-I have also created my own index: The Religious Stigma Average (RSA). RSA will be calculated by taking the average of the Government Restrictions Index (GRI) and Social Hostilities Index (SHI) to create a cumulative score for each country, over each year, on a scale from 0.0-10.0--lowest to highest religious stigma. In the final examination, the RSA will be calculated to find an average for all countries/territories, per year.
+I have also created my own index: The Religious Stigma Average (RSA). RSA will be calculated by taking the average of the Government Restrictions Index (GRI) and Social Hostilities Index (SHI) to create a cumulative score for each country, over each year, on a scale from 0.0-10.0--lowest to highest religious stigma. In the final examination, the RSA will be calculated to find an average for all countries/territories, per year in a longitudinal design study.
 
 
 If I observe that the RSA increases across the sample over the span from 2007-2022, I will thus be able to conclude that religion has become more stigmatized in the last two decades. If, on the other hand, the average of these indexes decrease over the allotted time, I will conclude that religion has not become more stigmatized in the last two decades. Finally, if the RSA varies over the 16 years, shows no real pattern, and presents a p-value of more than the predetermined alpha level of 0.05, I will conclude there is not sufficient evidence to reject the null hypothesis.
@@ -65,7 +65,7 @@ religion_SHI_GRI
 ```
 
 
-Regression
+
 ```{r}
 library(broom)
 library(knitr)
@@ -93,6 +93,8 @@ Has religion become less stigmatized in the last two decades? Based on this data
 There are a few reasons for the significant changes in religious stigma over this allotted time period. The initial, large but gradual increase in RSA is commonly associated with rising anti-Muslim sentiments, sectarian violence in Nigeria, and increased harassment regarding religious dress for women. The steep increase in 2012 is generally associated with the Arab Spring, occurring just before in 2010-2011. The relatively stabilized scores from 2016 on remain high, and typically connected with the decline of religious affiliation as a whole. Responding to the original question, beyond the smaller trends within, the graph shows an increase in RSA over time, as displayed by GRI and SHI averages observable growing, as well as displayed by the mean line.
 
 As with any study, there are limitations of the analysis and threats to inference. For one, it's possible that because human rights monitoring has increased, the resulting growing values of religious stigma could be related to the fact researchers are better at catching and reporting it.
+There are also a few possible confounders. The change in time has resulted in a rise of secularization, a rise that could have an impact in either direction of religious stigma. Time also has come with changing social norms, which could also be impacting stigma average. Although there is not something (for the purposes of this research) that can make time continue progressing forward, these aspects are both associated with the progression of time and reigious attitudes, and thus can be considered confounders.
+
 The other limiting aspects is that this data primarily looks at a macro level, assessing whole territories on their largest religious aspects. This presents the possibility than lots of micro-interactions and interpersonal interactions, those not convicted or reported may not be recorded. With more resources, perhaps future researchers would be able to interview more people in the countries and get a sense for the religious stigma present personal, more hidden culture.
 
 Overall, although this is not where the research on religious injustices should end, this data and analysis provides strong evidence that religious stigma has grown over the last two decades. With this information, we can pursue further, deeper research, and start looking for solutions to lower stigma all across the world.
