@@ -97,6 +97,6 @@ The other limiting aspects is that this data primarily looks at a macro level, a
 
 Overall, although this is not where the research on religious injustices should end, this data and analysis provides strong evidence that religious stigma has grown over the last two decades. With this information, we can pursue further, deeper research, and start looking for solutions to lower stigma all across the world.
 
-##Citation
+## Citations
 
 Pew Research Center. 2025. “Dataset: Global Restrictions on Religion 2007-2022.” doi: 10.58094/tecg-6392.
